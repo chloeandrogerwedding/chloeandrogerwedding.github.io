@@ -6147,7 +6147,7 @@ button.bg-dark:focus {
   .mx-sm-auto {
     margin-left: auto !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .m-md-0 {
     margin: 0 !important; }
   .mt-md-0,
@@ -6303,7 +6303,7 @@ button.bg-dark:focus {
   .px-md-4 {
     padding-left: 1.5rem !important; }
   .p-md-5 {
-    padding: 0rem !important; }
+    padding: 0px 0px 0px 300px !important; }
   .pt-md-5,
   .py-md-5 {
     padding-top: 3rem !important; }
@@ -7231,7 +7231,10 @@ button {
   transition: all 0.3s;
   text-align: center;
   background: url("../images/website2.png") no-repeat;
-  background-size: 100% auto;}
+  background-size: 100% auto;
+  position: fixed;
+  top: 0;
+      bottom: 0;}
   #sidebar.active {
     margin-left: -300px; }
   #sidebar .logo {
@@ -7285,7 +7288,7 @@ a[data-toggle="collapse"] {
 
 #content {
   width: 100%;
-  padding: 0;
+  padding: 300px 0 0 0;
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
