@@ -4405,7 +4405,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: transparent !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -7203,8 +7203,7 @@ button {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
+  }
 
 .navbar-btn {
   -webkit-box-shadow: none;
@@ -7290,8 +7289,19 @@ a[data-toggle="collapse"] {
     #content {
       background: url("../images/website_background.png") no-repeat;
       background-size: 100% auto;
+      background-position: right top;
+    }
+    img {
+      border-radius: 0.25rem;
     }
   }
+@media (max-width: 500px) {
+  #content {
+    background: url("../images/website_background.png") no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+  }
+}
 
 #content {
   width: 100%;
@@ -7300,7 +7310,9 @@ a[data-toggle="collapse"] {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
-
+#my-nav {
+  background-color: transparent;
+}
 .btn.btn-primary {
   background: #f8b739;
   border-color: #f8b739; }
