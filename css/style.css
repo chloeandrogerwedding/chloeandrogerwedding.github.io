@@ -7302,6 +7302,16 @@ a[data-toggle="collapse"] {
     background-position: right;
   }
 }
+@media (min-width: 991.98px) {
+  #gifts {
+    width:70vw;
+    text-align:center;
+  }
+}
+
+#gifts {
+  text-align:center;
+}
 
 #content {
   width: 100%;
